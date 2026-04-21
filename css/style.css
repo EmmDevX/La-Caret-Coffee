@@ -907,6 +907,7 @@ footer{
         transform: translateX(100%);
         transition: transform 0.3s ease;
         z-index: 1001;
+        display: none;
     }
 
     .menu-toggle {
@@ -924,6 +925,7 @@ footer{
 
     .nav-toggle:checked + .menu-toggle + .navs {
         transform: translateX(0);
+        display: flex;
     }
 
     /* Hero Section */
@@ -1220,5 +1222,194 @@ footer{
 
     .contact-us {
         padding: 0 10px;
+    }
+}
+
+/* iPad Responsiveness */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navs {
+        position: static;
+        transform: none;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        background-color: transparent;
+        width: auto;
+        padding: 0;
+        top: auto;
+        right: auto;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Hero Section */
+    #home h2 {
+        margin-left: 60px;
+        font-size: 40px;
+        width: 70vh;
+    }
+
+    #home p {
+        margin-left: 60px;
+        font-size: 18px;
+        width: 80vh;
+    }
+
+    .buttons {
+        margin-left: 60px;
+    }
+
+    /* Services Section */
+    #services {
+        margin-left: 40px;
+    }
+
+    #card {
+        padding: 30px 5px;
+    }
+
+    .card1 {
+        min-width: 280px;
+        max-width: 320px;
+    }
+
+    /* About Section */
+    .desc h3 {
+        margin-left: 60px;
+        font-size: 28px;
+    }
+
+    .desc p {
+        margin-left: 60px;
+        font-size: 18px;
+    }
+
+    .desc button {
+        margin-left: 60px;
+    }
+
+    .offers h4 {
+        font-size: 28px;
+    }
+
+    .offers h3 {
+        margin-left: 20vh;
+        margin-right: 20vh;
+        font-size: 28px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .offers h3 span {
+        font-size: 22px;
+    }
+
+    .offers p {
+        font-size: 18px;
+    }
+
+    /* Management Section */
+    #management h3 {
+        font-size: 28px;
+    }
+
+    .team {
+        gap: 20px;
+    }
+
+    .ceo, .barista, .crm {
+        width: 180px;
+        padding: 50px 15px;
+    }
+
+    .ceo img, .barista img, .crm img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .ceo h4, .barista h4, .crm h4 {
+        font-size: 18px;
+    }
+
+    .ceo p, .barista p, .crm p {
+        font-size: 14px;
+    }
+
+    /* Menu Section */
+    .left-side {
+        margin-left: 60px;
+    }
+
+    .left-side h3, .left-side p {
+        width: 400px;
+    }
+
+    .right-side {
+        margin-right: 60px;
+    }
+
+    .right-side h3 {
+        width: 400px;
+    }
+
+    .menu-card {
+        gap: 15px;
+    }
+
+    .cap, .mocha, .flatw, .affo {
+        width: 140px;
+    }
+
+    .cap img, .mocha img, .flatw img, .affo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cap p, .mocha p, .flatw p, .affo p {
+        width: 130px;
+    }
+
+    .cap h4, .mocha h4, .flatw h4, .affo h4 {
+        font-size: 16px;
+    }
+
+    .links {
+        gap: 40px;
+    }
+
+    /* Contact Section */
+    .form p {
+        font-size: 32px;
+    }
+
+    .form-section h5 {
+        font-size: 15px;
+    }
+
+    .column h3 {
+        font-size: 15px;
+    }
+
+    .column p {
+        font-size: 13px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 25px 15px;
+    }
+
+    .name h3 {
+        font-size: 16px;
+    }
+
+    .name p {
+        font-size: 13px;
+    }
+
+    .conditions a {
+        font-size: 13px;
     }
 }
