@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 /*Colors */
 :root{
     --header-color: #dabb9c;
@@ -794,6 +803,310 @@ hr{
         font-size: 14px;
         word-wrap: break-word;
     }
+
+    /* Testimonial Section */
+    #testimonials{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .test{
+        background: url(../images/test.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        width: 100%;
+        padding: 130px 20px;
+    }
+
+    .test h3{
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-shadow: 0 0 10px var(--footer-color);
+    }
+
+    #section{
+        margin-left: 100px;
+    }
+
+    .testimonial-cards{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 30px 10px;
+      margin-bottom: 30px;
+    }
+
+    /* Styling the Customer 1 Card */
+    .customer1{
+         display: flex;
+         gap: 10px;
+         width: 330px;
+         justify-content: center;
+         align-items: center;
+         border-radius: 8px;
+         margin-right: 20px;
+         box-shadow: 0 0 10px var(--footer-color);
+    }
+
+    .customer1 img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+
+    q{
+         width: 100px;
+         overflow: break-word;
+         margin-right: 30px;
+         margin-bottom: 50px;
+         font-size: 14px;
+         font-style: italic;
+    }
+
+    .customer1-desc, .customer1-desc q{
+        margin-right: 5px;
+        margin-top: 10px;
+        padding: 10px 5px;
+        width: 350px;
+        overflow: break-word;
+    }
+
+    .customer1-desc h3{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 10px;
+
+    }
+
+    /* Styling the Customer 2 Card */
+    .customer2{
+         display: flex;
+         gap: 10px;
+         background-color: var(--footer-color);
+         color: #fff;
+         transform: translateY(25px);
+         width: 330px;
+         justify-content: center;
+         align-items: center;
+         border-radius: 8px;
+         margin-right: 20px;
+         box-shadow: 0 0 10px var(--footer-color);
+    }
+
+    .customer2 img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+
+    q{
+         width: 100px;
+         overflow: break-word;
+         margin-right: 30px;
+         margin-bottom: 50px;
+         font-size: 14px;
+         font-style: italic;
+    }
+
+    .customer2-desc, .customer2-desc q{
+        margin-right: 15px;
+        width: 200px;
+        overflow: break-word;
+    }
+
+    .customer2-desc h3{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    /* Styling the Customer 3 Card */
+    .customer3{
+         display: flex;
+         gap: 10px;
+         width: 330px;
+         justify-content: center;
+         align-items: center;
+         border-radius: 8px;
+         margin-right: 20px;
+         box-shadow: 0 0 10px var(--footer-color);
+    }
+
+    .customer3 img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+
+    q{
+         width: 100px;
+         overflow: break-word;
+         margin-right: 30px;
+         margin-bottom: 50px;
+         font-size: 14px;
+         font-style: italic;
+    }
+
+    .customer3-desc, .customer3-desc q{
+        margin-right: 15px;
+        width: 200px;
+        overflow: break-word;
+    }
+
+    .customer3-desc h3{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    /* Styling the Customer 4 Card */
+    .card4{
+         display: flex;
+         gap: 10px;
+         width: 330px;
+         justify-content: center;
+         align-items: center;
+         border-radius: 8px;
+         width: 330px;
+         margin-top: 30px;
+         padding: 20px;
+         background-color: var(--footer-color);
+         color: #fff;
+         margin-right: 20px;
+         box-shadow: 0 0 10px var(--footer-color);
+    }
+
+    .card4 img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+
+    q{
+         width: 100px;
+         overflow: break-word;
+         margin-right: 30px;
+         margin-bottom: 50px;
+         font-size: 14px;
+         margin-top: 20px;
+         font-style: italic;
+    }
+
+    .card4-desc, .card4-desc q{
+        margin-right: 15px;
+        width: 200px;
+        overflow: break-word;
+    }
+
+    .card4-desc h3{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    /* Styling the Customer 5 Card */
+    .customer5  {
+         display: flex;
+         gap: 10px;
+         width: 330px;
+         justify-content: center;
+         align-items: center;
+         transform: translateY(50px);
+         border-radius: 8px;
+         margin-right: 20px;
+         box-shadow: 0 0 10px var(--footer-color);
+    }
+
+    .customer5 img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+
+    q{
+         width: 100px;
+         overflow: break-word;
+         margin-right: 30px;
+         margin-bottom: 50px;
+         font-size: 14px;
+         font-style: italic;
+    }
+
+    .customer5-desc, .customer5-desc q{
+        margin-right: 15px;
+        width: 200px;
+        overflow: break-word;
+    }
+
+    .customer5-desc h3{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    /* Styling the Customer 6 Card */
+    .customer6  {
+         display: flex;
+         gap: 10px;
+         width: 330px;
+         justify-content: center;
+         align-items: center;
+         border-radius: 8px;
+         width: 330px;
+         background-color: var(--footer-color);
+         color: #fff;
+         margin-right: 20px;
+         box-shadow: 0 0 10px var(--footer-color);
+    }
+
+    .customer6 img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+
+    q{
+         width: 100px;
+         overflow: break-word;
+         margin-right: 30px;
+         margin-bottom: 50px;
+         font-size: 14px;
+         font-style: italic;
+    }
+
+    .customer6-desc, .customer6-desc q{
+        margin-right: 15px;
+        width: 200px;
+        overflow: break-word;
+    }
+
+    .customer6-desc h3{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    /* Testimonial Card Hover Effects */
+    .customer1:hover, .customer2:hover, .customer3:hover, .card4:hover, .customer5:hover, .customer6:hover {
+        transform: translateY(5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 /*Footer Section */
 footer{
     background-color: var(--footer-color);
@@ -881,14 +1194,123 @@ footer{
 /* Scroll Animation Base */
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
+    transform: translateY(60px) scale(0.98);
+    transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
 }
 
 .reveal.active {
     opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Stagger animation for children */
+.reveal .card1,
+.reveal .cap,
+.reveal .mocha,
+.reveal .flatw,
+.reveal .affo,
+.reveal .ceo,
+.reveal .barista,
+.reveal .crm {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+}
+
+.reveal.active .card1:nth-child(1),
+.reveal.active .cap:nth-child(1) { transition-delay: 0.1s; }
+
+.reveal.active .card1:nth-child(2),
+.reveal.active .mocha:nth-child(2) { transition-delay: 0.2s; }
+
+.reveal.active .card1:nth-child(3),
+.reveal.active .flatw:nth-child(3) { transition-delay: 0.3s; }
+
+.reveal.active .card1:nth-child(4),
+.reveal.active .affo:nth-child(4) { transition-delay: 0.4s; }
+
+.reveal.active .card1,
+.reveal.active .cap,
+.reveal.active .mocha,
+.reveal.active .flatw,
+.reveal.active .affo,
+.reveal.active .ceo,
+.reveal.active .barista,
+.reveal.active .crm {
+    opacity: 1;
     transform: translateY(0);
 }
+
+#home h2 {
+    animation: fadeSlideDown 1s ease forwards;
+}
+
+#home p {
+    animation: fadeSlideUp 1.2s ease forwards;
+}
+
+.buttons {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+button, .shop a, .contact a, .tour a, .mail a {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.shop a:hover,
+.contact a:hover,
+.tour a:hover,
+.mail a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Cards */
+.card1, .cap, .mocha, .flatw, .affo {
+    transition: all 0.4s ease;
+}
+
+.card1:hover,
+.cap:hover,
+.mocha:hover,
+.flatw:hover,
+.affo:hover {
+    transform: translateY(-10px) scale(1.04);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+#home {
+    background-attachment: fixed;
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     /* Header */
@@ -1059,6 +1481,32 @@ footer{
 
     .form-section img {
         margin-left: 0;
+    }
+
+    /* Testimonials */
+    #section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .testimonial-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .customer1, .customer2, .customer3, .card4, .customer5, .customer6 {
+        width: 100%;
+        margin-right: 0;
+        flex-direction: column;
+    }
+
+    .customer2 {
+        transform: translateY(0);
+    }
+
+    .customer5 {
+        transform: translateY(0);
     }
 
     /* Footer */
@@ -1236,6 +1684,21 @@ footer{
 
     .contact-us {
         padding: 0 10px;
+    }
+
+    /* Testimonials Mobile */
+    #section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .testimonial-cards {
+        padding: 15px 5px;
+        gap: 15px;
+    }
+
+    .customer1, .customer2, .customer3, .card4, .customer5, .customer6 {
+        width: 100%;
     }
 }
 

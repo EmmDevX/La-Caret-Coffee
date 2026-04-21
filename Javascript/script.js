@@ -11,17 +11,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Scroll Reveal Animation
-function revealOnScroll() {
-    const reveals = document.querySelectorAll('.reveal');
 
-    reveals.forEach(element => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
-
-        if (elementTop < windowHeight - 100) {
-            element.classList.add('active');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
         }
     });
-}
+}, {
+    threshold: 0.15
+});
 
-window.addEventListener('scroll', revealOnScroll);
+document.querySelectorAll('.reveal').forEach(el => {
+    observer.observe(el);
+});
+
