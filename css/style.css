@@ -1540,6 +1540,13 @@ button:hover,
 }
 
 @media (max-width: 480px) {
+    /* Header */
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
     /* Hero Section */
     #home h2 {
         font-size: 24px;
